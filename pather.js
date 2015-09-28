@@ -16,6 +16,7 @@ var coords = inputText.map(function(row,rowNum){
 	}).filter(function(val){return !!val})
 }).reduce(concat)
 
+//we'll compare each pair of coordinates, and fill asterisks in between them at the appropriate row and column.
 for(var i = 0; i < coords.length-1; i++){
 	var firstCoordY = coords[i][0]
 	var firstCoordX = coords[i][1]
